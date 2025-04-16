@@ -87,8 +87,7 @@ public class Main {
      */
 
     /* 1. Создайте метод sumRange, который принимает два числа (начало и конец диапазона)
-     и возвращает сумму всех чисел между ними (включительно).
-     */
+     и возвращает сумму всех чисел между ними (включительно).*/
     public static int sumRange(int start, int end) {
         int sum = 0;
         for (int i = start; i <= end; i++) {
@@ -99,10 +98,10 @@ public class Main {
 
     // 2. Создайте два перегруженных метода add: Первый складывает два целых числа; Второй складывает две строки.
     public static int add(int a, int b) {
-        return a+b;
+        return a + b;
     }
     public static String add(String a, String b) {
-        return a+b;
+        return a + b;
     }
 
     // 3. Напишите метод findMax, который принимает массив целых чисел и возвращает его максимальный элемент.
@@ -118,10 +117,10 @@ public class Main {
 
     // 4. Напишите метод, вычисляющий факториал числа с помощью цикла for
     public static long factorialN(int n) {
-        long result = 1;
         if (n < 0) {
             throw new IllegalArgumentException("Число должно быть неотрицательным");
         }
+        long result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
         }

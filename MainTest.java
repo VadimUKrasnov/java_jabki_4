@@ -17,14 +17,6 @@ class MainTest {
         Assertions.assertEquals(a * b, Main.multiply(a, b));
     }
 
-    @Test
-    void testHello() {
-    }
-
-    @Test
-    void testMultiply() {
-    }
-
     // ДЗ
     @Test
     void sumRange() {
@@ -54,16 +46,23 @@ class MainTest {
     }
 
     @Test
-    void calculateFactorial() {
+    void calculateFactorial_Positive() {
         int a = 3;
         Assertions.assertEquals(6, Main.factorialN(a));
     }
 
     @Test
-    void calculateFactorialSecond() {
+    void calculateFactorial_Negative() {
         int a = -2;
         assertThrows(IllegalArgumentException.class, () -> Main.factorialN(a));
     }
+
+    @Test
+    void calculateFactorial_Zero() {
+        int a = 0;
+        Assertions.assertEquals(1, Main.factorialN(a));
+    }
+
 
     @Test
     void getAreaFirst() {
